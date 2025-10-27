@@ -1,0 +1,29 @@
+{
+  "name": "Dessert assignment with typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "serve": "npx http-server . -p 3000 -0",
+    "dev":"tsc -w & npx http-server . -p 3000 -0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.17.1",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "typescript": "^5.9.3"
+  },
+
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true
+  }
+  
+}

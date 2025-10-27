@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dessert Ordering Interface</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <!-- Left Section -->
+    <section>
+      <h1 class="title">Desserts</h1>
+
+      <div class="dessert-grid">
+        <!-- Dessert Card 1 -->
+        <div class="dessert-card">
+          <img src="images/image-waffle-mobile.jpg" alt="Waffle with Berries" />
+          <div class="dessert-info">
+            <h4 class="category">Waffle</h4>
+            <p class="name">Waffle with Berries</p>
+            <span class="price">$5.50</span>
+            <button class="add-btn">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Dessert Card 2 -->
+        <div class="dessert-card">
+          <img src="images/image-creme-brulee-tablet.jpg" alt="Crème Brûlée" />
+          <div class="dessert-info">
+            <h4 class="category">Custard</h4>
+            <p class="name">Crème Brûlée</p>
+            <span class="price">$7.00</span>
+            <button class="add-btn">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Dessert Card 3 -->
+        <div class="dessert-card">
+          <img src="images/image-macaron-tablet.jpg" alt="Macarons" />
+          <div class="dessert-info">
+            <h4 class="category">Cookie</h4>
+            <p class="name">Macarons</p>
+            <span class="price">$8.00</span>
+            <button class="add-btn">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Dessert Card 4 -->
+        <div class="dessert-card">
+          <img src="images/image-tiramisu-desktop.jpg" alt="Tiramisu" />
+          <div class="dessert-info">
+            <h4 class="category">Cake</h4>
+            <p class="name">Tiramisu</p>
+            <span class="price">$8.00</span>
+            <button class="add-btn">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Dessert Card 5 -->
+        <div class="dessert-card">
+          <img src="images/image-baklava-desktop.jpg" alt="Baklava" />
+          <div class="dessert-info">
+            <h4 class="category">Pastry</h4>
+            <p class="name">Baklava</p>
+            <span class="price">$5.50</span>
+            <button class="add-btn">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Dessert Card 6 -->
+        <div class="dessert-card">
+          <img src="images/image-meringue-desktop.jpg" alt="Lemon Meringue Pie" />
+          <div class="dessert-info">
+            <h4 class="category">Pie</h4>
+            <p class="name">Lemon Meringue Pie</p>
+            <span class="price">$4.00</span>
+            <button class="add-btn">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Dessert Card 7 -->
+        <div class="dessert-card">
+          <img src="images/image-cake-desktop.jpg" alt="Red Velvet Cake" />
+          <div class="dessert-info">
+            <h4 class="category">Cake</h4>
+            <p class="name">Red Velvet Cake</p>
+            <span class="price">$4.50</span>
+            <button class="add-btn">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Dessert Card 8 -->
+        <div class="dessert-card">
+          <img src="images/image-brownie-desktop.jpg" alt="Salted Caramel Brownie" />
+          <div class="dessert-info">
+            <h4 class="category">Brownie</h4>
+            <p class="name">Salted Caramel Brownie</p>
+            <span class="price">$5.50</span>
+            <button class="add-btn">🛒 Add to Cart</button>
+            <!-- Quantity Controls -->
+  <div class="quantity-control">
+    <button class="decrease">−</button>
+    <span class="quantity">1</span>
+    <button class="increase">+</button>
+  </div>
+          </div>
+        </div>
+
+        <!-- Dessert Card 9 -->
+        <div class="dessert-card">
+          <img src="images/image-panna-cotta-desktop.jpg" alt="Vanilla Panna Cotta" />
+          <div class="dessert-info">
+            <h4 class="category">Panna Cotta</h4>
+            <p class="name">Vanilla Panna Cotta</p>
+            <span class="price">$6.50</span>
+            <button class="add-btn">🛒 Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🛒 Cart Section -->
+    <aside class="cart-section">
+      <h2>Your Cart (<span id="cart-count">0</span>)</h2>
+      <img src="images/image.png" alt="Cake Icon" class="cart-icon" />
+
+      <div id="cart-items">
+        <p class="empty">Your added items will appear here.</p>
+      </div>
+
+      <div class="cart-summary">
+        <div class="total">
+          <strong>Order Total:</strong>
+          <span id="total-price">$0.00</span>
+        </div>
+        <p class="note">This is a <strong>carbon-neutral</strong> delivery 🌿</p>
+        <button id="confirm-order" class="confirm-btn">Confirm Order</button>
+      </div>
+      <p id="order-message" class="success-message hidden">✅ Order Confirmed! Thank you 🎉</p>
+    </aside>
+    <!-- ✅ Modal -->
+  <div id="order-modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Order Summary 🍰</h3>
+      <div id="modal-items"></div>
+      <div class="modal-total"></div>
+      <button id="close-modal" class="close-btn">Close</button>
+    </div>
+  </div>
+  </main>
+  <script type="module" src="./dist/index.js"></script>
+</body>
+</html>
